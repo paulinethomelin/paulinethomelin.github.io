@@ -1,0 +1,251 @@
+body{
+    font-family: 'Merriweather', serif;
+    background-color: white;
+    color:black;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    }
+
+#menu {
+    width: 10%;
+    background-color: #508573;
+    position: relative;
+    border-right: 4px solid #143329;
+    }
+
+
+#menu ul {
+    position: fixed;
+    padding-left: 1em;
+    padding-top: 0.8em;
+}
+
+#menu li {
+    margin-bottom: 3em;
+}
+
+.menu__items {
+    padding: 0.6em 1em;
+    box-sizing: border-box; 
+    width: max-content;
+    font-weight: bold;  
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+#menu ul li img {
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 3.5em;
+    margin-left:1em; 
+    }
+
+
+.menu__items:hover {
+    color: white;
+    background-color: black;
+    border-radius: 0.6em;
+    text-decoration: none;
+    transform: translate(2em);
+    transition: 0.8s;
+}
+
+#gauche {
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.75);
+}
+
+
+header {
+    content: '';
+    background-image: url(../images/IMG_20190629_170732.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position:relative;
+    display: flex;
+    border-bottom: 4px solid #143329;
+    box-shadow: 0 0 20px rgba(0,0,0,0.75);
+}
+
+.blur {
+    filter: blur(8px);
+    z-index: 10;
+}
+
+#links__socials {
+    position: absolute;
+    top: 0;
+    right: 0;  
+    padding: 0.5em 1em;
+    margin-right: 7em;
+}
+
+#links li{
+    display: inline-block;
+    margin-right: 1em;   
+}
+
+
+#twitter {
+    width: 2em;
+    height: auto;
+}
+
+#linkedin {
+    width: 12%;
+    height: auto; 
+}
+
+#Presentation {
+   margin: auto auto;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 50%;
+}
+
+h1 {
+    font-size: 4em;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-color: rgba(7, 12, 10, 0.95) ;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 0.6em ;
+}
+
+#Presentation__job {
+    font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+    padding: 0.7em 0.6em;
+    border-radius: 0.6em;
+    font-size: 1.5rem;
+    background: #508573;
+    color: white;
+    /* transform: translateY(-6px); */
+    margin: 1em auto 0 auto;
+    text-align: center;
+}
+
+.circular__image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    clip-path: circle(20% at 55% 30%);
+    margin: -2em 2em -12em -2em;
+} 
+
+
+#Presentation p {
+    background-color: rgba(7, 12, 10, 0.9) ;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em 1em;
+    width: 90%;
+    border-radius: 0 0 0.6em 0.6em;
+    box-shadow: 0 0 20px rgba(0,0,0,0.75);
+}
+
+button {
+    display: block;
+    background: #143329;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    margin: auto;
+}
+
+span {
+    font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+    padding: 0.7em 0.6em;
+    border-radius: 0.6em;
+    font-size: 1.25rem;
+    background: #508573;
+    color: white;
+    transform: translateY(-6px);
+    margin: auto;
+}
+
+button span:hover{
+    transform: translateY(-2px);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.25em;
+    padding: 0.3em;
+    font-weight: bold;
+    color: #143329;
+    border: 5px solid rgb(80, 133, 115);
+    border-radius: 0.6em;
+    margin-inline: auto;
+    width: max-content;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    box-shadow: 0em 0.3em 0.4em #143329, -0em 0.3em 0.4em #143329;
+}
+
+section p {
+    line-height: 1.5em;
+}
+
+#section__about__container {
+    display: flex; 
+    justify-content: space-between;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(200, 200, 200, 0.3);
+    padding: 2em;
+}
+
+.info__resume {
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(200, 200, 200, 0.3);
+    padding: 2em;
+}
+
+#aboutme {
+    width: 50%;
+}
+
+#bio {
+    width: 40%;
+}
+
+td:nth-child(odd) {
+    font-weight: bold;
+    color: #508573;
+}
+
+footer{
+    text-align: center;
+    color: #508573;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 4em;
+}
+
+
