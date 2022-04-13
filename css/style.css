@@ -37,13 +37,23 @@ body{
     display: inline-block;
 }
 
+/*
 #menu ul li img {
-    display: inline-block;
+    display: block;
     border-radius: 50%;
-    margin-bottom: 3.5em;
+    margin-bottom:3.5em;
     margin-left:1em; 
     }
+    */
 
+#menu ul img {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto 3.5em auto;
+    /*margin-left: 1em; */
+    width: 8em;
+    height: 8em;
+        }
 
 .menu__items:hover {
     color: white;
@@ -56,7 +66,6 @@ body{
 
 #gauche {
     width: 90%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.75);
 }
 
 
@@ -72,33 +81,28 @@ header {
     box-shadow: 0 0 20px rgba(0,0,0,0.75);
 }
 
-.blur {
-    filter: blur(8px);
-    z-index: 10;
-}
-
 #links__socials {
     position: absolute;
     top: 0;
     right: 0;  
     padding: 0.5em 1em;
-    margin-right: 7em;
+    margin-right: 2em;
+    background-color: rgba(7, 12, 10, 0.95) ;
+    border-radius: 0 0 0.6em 0.6em;
 }
 
-#links li{
+#links__socials li{
     display: inline-block;
     margin-right: 1em;   
+    background-color: rgba(7, 12, 10, 0.95) ;
+    border-radius: 0 0 0.6em 0.6em;
+    z-index: 1;
 }
 
 
-#twitter {
+#twitter , #linkedin {
     width: 2em;
     height: auto;
-}
-
-#linkedin {
-    width: 12%;
-    height: auto; 
 }
 
 #Presentation {
@@ -108,11 +112,11 @@ header {
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   width: 50%;
+   /*width: 50%;*/
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 4rem;
     box-sizing: border-box;
     font-weight: bold;
     background-color: rgba(7, 12, 10, 0.95) ;
@@ -130,7 +134,6 @@ h1 {
     font-size: 1.5rem;
     background: #508573;
     color: white;
-    /* transform: translateY(-6px); */
     margin: 1em auto 0 auto;
     text-align: center;
 }
@@ -141,19 +144,8 @@ h1 {
     object-fit: cover;
     clip-path: circle(20% at 55% 30%);
     margin: -2em 2em -12em -2em;
-} 
+   } 
 
-
-#Presentation p {
-    background-color: rgba(7, 12, 10, 0.9) ;
-    font-weight: bold;
-    font-size: 2em;
-    text-align: center;
-    padding: 0.5em 1em;
-    width: 90%;
-    border-radius: 0 0 0.6em 0.6em;
-    box-shadow: 0 0 20px rgba(0,0,0,0.75);
-}
 
 button {
     display: block;
@@ -194,7 +186,7 @@ section {
 
 h2 {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     padding: 0.3em;
     font-weight: bold;
     color: #143329;
@@ -224,7 +216,14 @@ section p {
     box-shadow: 
     12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(200, 200, 200, 0.3);
-    padding: 2em;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.skills__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #aboutme {
@@ -235,17 +234,31 @@ section p {
     width: 40%;
 }
 
+.light-grey {
+    background-color: antiquewhite;
+    border: 1px solid #143329;
+    border-radius: 15%;
+}
+
+.light-green {
+    background-color: #508573;
+    border-radius: 20%;
+}
+
+tr, td {
+    padding: 1em;
+}
+
 td:nth-child(odd) {
     font-weight: bold;
     color: #508573;
 }
 
+
 footer{
     text-align: center;
     color: #508573;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     padding-top: 4em;
 }
-
-
